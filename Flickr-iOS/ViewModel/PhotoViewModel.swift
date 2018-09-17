@@ -64,15 +64,17 @@ class PhotoViewModel: NSObject {
             let urlStr = urlString + "&page=\(self.page)" + "&per_page=\(self.per_page)"
             self.apiClient.getPhotos(urlString: urlStr){(dict) in
                 DispatchQueue.main.async {
-                    if isSameSearch {
-                        if let arr = dict {
+                    if let arr = dict {
+                        if isSameSearch {
                             self.photosArray.append(contentsOf: arr)
+                        }
+                        else{
+                            self.photosArray = arr
                         }
                     }
                     else{
-                        self.photosArray = dict!
+                        self.alertMessage = "Error"
                     }
-                    
                     self.isLoading = false
                     if self.isFirstResult {
                         self.isFirstResult = false

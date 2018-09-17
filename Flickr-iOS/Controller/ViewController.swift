@@ -64,7 +64,7 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout {
     }
     
     func showAlert(str: String) {
-        let alert = UIAlertController(title: "No Internet", message: str, preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Flickr-iOS", message: str, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
