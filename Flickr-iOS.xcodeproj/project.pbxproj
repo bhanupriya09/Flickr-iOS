@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				7D4FDB3C214ED7C20030694D /* AppDelegate.swift */,
-				7D4FDB3E214ED7C20030694D /* ViewController.swift */,
+				7DE73557214F5D21004001E8 /* Controller */,
 				7D4FDB40214ED7C20030694D /* Main.storyboard */,
 				7D4FDB43214ED7C30030694D /* Assets.xcassets */,
 				7D4FDB45214ED7C30030694D /* LaunchScreen.storyboard */,
@@ -123,6 +123,14 @@
 				7D4FDB5E214ED7C30030694D /* Info.plist */,
 			);
 			path = "Flickr-iOSUITests";
+			sourceTree = "<group>";
+		};
+		7DE73557214F5D21004001E8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7D4FDB3E214ED7C20030694D /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
